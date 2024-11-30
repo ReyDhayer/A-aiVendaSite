@@ -1,0 +1,489 @@
+/* Geral */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #5A2D81, #8E44AD, #D4A5D6);
+    line-height: 1.6;
+}
+
+/* Fundo e Cabeçalho */
+/* Fundo com Gradiente */
+.fundo {
+    background: linear-gradient(135deg, #5A2D81, #8E44AD);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+/* Seção de Produtos */
+.imagens-produtos {
+    display: flex;
+    flex-direction: column;
+    /* Organiza as imagens de forma vertical (uma abaixo da outra) */
+    gap: 20px;
+    /* Espaço entre cada imagem */
+    align-items: center;
+    /* Centraliza as imagens horizontalmente */
+}
+
+.produto-item {
+    text-align: center;
+    /* Centraliza a imagem e o preço */
+}
+
+.acai,
+.acai2 {
+    width: 150px;
+    height: auto;
+    display: block;
+    /* Garante que cada imagem ocupe sua própria linha */
+    margin: 0 auto;
+    /* Centraliza as imagens */
+}
+
+.preco {
+    font-size: 16px;
+    color: #b22222;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 40px;
+    color: white;
+    display: flex
+}
+
+p {
+    justify-content: center;
+    display: flex;
+}
+
+.btn {
+
+    outline: none;
+    border: none;
+    padding: 0.7em 1em;
+    display: inline-block;
+    text-decoration: none;
+    margin: auto;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-family: 'open_sansregular';
+    border-radius: 3px;
+    background: #353535;
+    position: relative;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+
+}
+
+.btn-box {
+
+    overflow: hidden;
+    color: #fff;
+}
+
+.btn-box i {
+
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    left: 0.1em;
+    font-size: 1em;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+
+}
+
+.btn-box:hover i {
+
+    left: -0.2em;
+
+}
+
+.btn-box .reflexo {
+
+    background-color: #fff;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: -145px;
+    transform: rotateZ(45deg);
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+
+}
+
+.btn-box:hover {
+
+    background-color: #00a8ea;
+    color: #353535;
+
+}
+
+.btn-box:hover .reflexo {
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    left: 135px;
+
+}
+
+.preco {
+    font-size: 16px;
+    color: #b22222;
+    /* Vermelho escuro */
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Estilos da Seção de Produtos */
+.produtos-acai {
+
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #5A2D81, #8E44AD);
+}
+
+.produtos-acai h2 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.produtos-lista {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produto-item {
+    background-color: #0b4e16;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.produto-item img {
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.produto-info h3 {
+    font-size: 22px;
+    color: #cecb14;
+    margin-top: 15px;
+}
+
+.produto-info .descricao {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.produto-info .preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b22222;
+    margin-top: 10px;
+}
+
+.btn-comprar {
+    background-color: #5A2D81;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #8E44AD;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(açai.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20 px 10 px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+.Contato {
+    background: linear-gradient(135deg, #5A2D81, #8E44AD);
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.mapa {
+    background: linear-gradient(135deg, #5A2D81, #8E44AD);
+}
+
+.RodapeFundo {
+    background: linear-gradient(135deg, #5A2D81, #8E44AD);
+}
+
+/* Estilização do Rodapé */
+.rodape {
+    background-color: #353535;
+    /* Cor de fundo do rodapé */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+.rodape-conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.rodape p {
+    margin: 10px 0;
+}
+
+
+.rodape {
+    background-color: black;
+}
+/* Botão do WhatsApp */
+.btn-whatsapp {
+    background-color: #25d366;
+    /* Cor verde do WhatsApp */
+    color: white;
+    padding: 15px 25px;
+    /* Tamanho adequado do botão */
+    border: none;
+    border-radius: 50px;
+    /* Botão arredondado */
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    /* Fixa o botão na tela */
+    bottom: 20px;
+    /* Distância do botão para a parte inferior */
+    right: 20px;
+    /* Distância do botão para a parte direita */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Adiciona sombra ao botão */
+    z-index: 1000;
+    /* Garantir que o botão esteja no topo de outros elementos */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Ícone do WhatsApp */
+.btn-whatsapp i {
+    margin-right: 10px;
+    /* Espaço entre o ícone e o texto */
+    font-size: 20px;
+    /* Tamanho do ícone */
+}
+
+/* Efeito hover */
+.btn-whatsapp:hover {
+    background-color: #128c7e;
+    /* Cor mais escura ao passar o mouse */
+    transform: scale(1.1);
+    /* Aumenta o botão ao passar o mouse */
+}
+.Insta {
+    max-width: 120px;
+    margin-left: -0px;
+}
+.fundo {
+    background: linear-gradient(135deg, #5A2D81, #8E44AD);
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/* Estilização do Mapa */
+.mapa {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.mapa h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.mapa-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+iframe {
+    border: none;
+    border-radius: 10px;
+}
+
+
+hr {
+    border: none;
+    /* Remove o estilo padrão da linha */
+    border-top: 2px solid #fff;
+    /* Define uma linha branca e de 2px de espessura */
+    margin: 10px auto;
+    /* Ajusta o espaçamento entre as linhas e as margens */
+    width: 20%;
+    /* Define a largura da linha */
+}
+
+h2 {
+    animation: fadeInUp 1s forwards;
+    /* Aplica a animação */
+    transition: border-color 0.3s ease;
+    /* Transição suave para a mudança de cor */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
